@@ -25,7 +25,14 @@ double square(double x){
 double cube(double x){
 	return x * x * x;
 }
-
+double inverse(double x){
+	if (x != 0){
+		return 1/x;
+	} else{
+		//handle division by zero
+		return 0; //or some error value
+	}
+}
 int main() {
     int a, b;
     char operation;
